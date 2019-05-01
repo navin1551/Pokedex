@@ -12,7 +12,7 @@ app.use(morgan(morganSetting));
 app.use(cors());
 app.use(helmet());
 
-app.use(function validateBearerToken(req, res, next) {
+/*app.use(function validateBearerToken(req, res, next) {
   const apiToken = process.env.API_TOKEN;
   const authToken = req.get("Authorization");
 
@@ -21,7 +21,7 @@ app.use(function validateBearerToken(req, res, next) {
   }
   // move to the next middleware
   next();
-});
+});*/
 
 const validTypes = [
   `Bug`,
